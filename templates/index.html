@@ -1,0 +1,24 @@
+$def with (result, q)
+<html>
+  <head>
+	<title>XPath lookup</title>
+  </head>
+  <body>
+	<h1>XPath lookup</h1>
+	<form method="get">
+	<p>
+	  URL: <input type="text" name="url" value="$q.url"/>
+	</p>
+	<p>
+	  XPath: <input type="text" name="xpath" value="$q.xpath" />
+	</p>
+	<p>
+	  <input type="submit" name="Go" />
+	</p>
+	</form>
+	<h2>Result</h2>
+	<p>
+         <div class="result">$result</div>
+	</p>
+  </body>
+</html>
